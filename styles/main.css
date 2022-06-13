@@ -1,14 +1,11 @@
-:root{
-    --very-light-pink: #C7C7C7;
-    --hospital-green: #ACD9B2;
-    --Text-input-field: #F7F7F7;
-    --dark: #232330;
-    
+:root {
+  --very-light-pink: #c7c7c7;
+  --hospital-green: #acd9b2;
+  --Text-input-field: #f7f7f7;
+  --dark: #232330;
 }
 
-body{
-    margin: 0px;
-    height: 100vh;
-    width: 100vw;
-    background: var(--dark);
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
