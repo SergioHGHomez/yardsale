@@ -40,6 +40,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 .form-container_heading{
@@ -100,5 +102,8 @@ font-size: var(--md);
 
 
 @media (max-width: 600px) {
+    .form-container_form{
+        justify-content: space-around;
+    }
 
 }
