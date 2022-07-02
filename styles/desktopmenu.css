@@ -17,3 +17,36 @@ body {
  font-family: "Quicksand", sans-serif;
  margin: 0%;
 }
+
+.desktop-menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 10px;
+
+}
+
+.desktop-menu_ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.desktop-menu_ul li{
+    margin-bottom: 12px;
+    
+}
+
+
+.desktop-menu_ul li:last-child{
+    border-top: 1px solid var(--very-light-pink) ;
+    padding-top: 20px;
+}
+
+.desktop-menu_ul li:last-child a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
