@@ -20,9 +20,10 @@ body {
 
 .navbar{
     width: 100%;
-    padding: 8px 0px 80px 0px;
+    padding: 8px 0px 8px 0px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid var(--very-light-pink);
 }
 
 .nav-left{
@@ -41,7 +42,7 @@ body {
 }
 
 .nav-left_logo{
-    width: 200px;
+    width: 150px;
 }
 
 .nav-left_item{
@@ -77,7 +78,40 @@ body {
 .nav-right_menu{
     font-weight: lighter;
     margin-right: 32px;
+    display: flex;
+    align-items: center;
 }
+
+.nav-right_cart a{
+    text-decoration: none;
+    color: var(--Text-input-field);
+}
+
+.nav-right_icon{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.nav-right_icon img{
+    width: 100%;
+}
+
+.nav-right_icon div{
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    top: -12px;
+    
+}
+
+
 
 
 @media (max-width:600px) {
