@@ -1,0 +1,146 @@
+:root {
+    /* colors */
+    --very-light-pink: #c7c7c7;
+    --hospital-green: #acd9b2;
+    --Text-input-field: #f7f7f7;
+    --dark: #232330;
+    --white: #ffffff;
+    --grey: #555;
+    --light-grey: #eee;
+    /* text sizes */
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+ font-family: "Lato", sans-serif;
+ font-family: "Quicksand", sans-serif;
+ margin: 0%;
+}
+
+.container{
+    display: grid;
+    justify-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100vh;
+}
+
+.shopping-list{
+    width: 400px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopping-list_heading{
+    display: flex;
+    align-items: center;
+}
+
+.shopping-list_close{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.shopping-list_h1{
+    font-size: var(--lg);
+    margin-bottom: 16px;
+}
+
+
+
+.shopping-list_card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+.card_item{
+    display: flex;
+    align-items: center;
+}
+
+.shopping-list_img{
+    width: 76px;
+    height: 76px;
+    border-radius: 15px;
+}
+
+.shopping-list_name{
+    font-weight: lighter;
+    margin-left: 16px;
+    width: 100px;
+}
+
+.shopping-list_price{
+    font-weight: bold;
+}
+.shopping-list_delited{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+.shopping-list_info{
+    width: 100%;
+    padding: 16px 0 16px 0;
+    background:var(--light-grey) ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_date{
+    font-weight: bold;
+    margin: 0px 0px 4px 0;
+}
+
+.info_articles{
+    margin: 0 0 0 16px;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.info_total{
+    font-weight: bold;
+    margin: 0 16px 0 0;
+
+}
+
+@media (max-width: 640px) {
+    .container{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .shopping-list_close{
+        display: none;
+    }
+
+    .shopping-list_h1{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 280px) {
+    
+
+    .card_item{
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+
+    }
+    
+}
